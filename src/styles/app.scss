@@ -1,0 +1,21 @@
+@import "variable";
+@import "mixin";
+.App{
+  background-color: $container;
+}
+.link{
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+table {
+  th, td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,24 @@
+@import "variable";
+@import "mixin";
+
+.upload{
+  .label-upload{
+    margin: 10px;
+  }
+  .button-upload{
+    color: white;
+  }
+
+  .preview-image{
+    @include w-h (100%, 150px);
+    @include flex (flex, center, center);
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    color:#ccc;
+    margin-bottom: 25px;
+    img{
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}

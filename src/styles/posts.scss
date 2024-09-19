@@ -1,0 +1,49 @@
+@import "variable";
+@import "mixin";
+.posts-container{
+  width: 70%;
+  height: 500px;
+  background-color: $container;
+  margin-top: 15px;
+  .cart-content{
+    width:100%;
+    .card-body{
+      .card-text{
+        img{
+          width:100%;
+          height:auto;
+        }
+      }
+
+    }
+  }
+  .title-content{
+    margin-bottom: 5px;
+    @include flex(flex,auto,center);
+    .image-title-content-size{
+      @include w-h(50px,50px);
+      border-radius: 50%;
+      border: 1px solid #dddd;
+      outline: 1px solid blue;
+      object-fit: cover;
+    }
+    .title-content-info{
+      margin-left: 10px;
+    }
+  }
+  .footer-content{
+    width: 95%;
+    margin: 10px 0 10px 20px;
+    padding: 10px;
+    border-top: 1px solid #dddd;
+    border-bottom:1px solid #dddd ;
+  }
+  span{
+    padding: 5px 20px 5px 20px;
+    margin: 5px;
+    &:hover{
+      background-color: $container;
+
+    }
+  }
+}

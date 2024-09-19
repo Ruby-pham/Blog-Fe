@@ -1,0 +1,20 @@
+@import "variable";
+@import "mixin";
+.create-new-posts-container{
+  @include flex (flex, center, center);
+  .create-new-posts-content{
+    background-color: white;
+    width: 70%;
+    margin: 20px;
+    padding: 20px;
+    .btn-send-content{
+      margin: 10px;
+      padding: 6px;
+      border: none;
+      color: white;
+      border-radius: 8px;
+
+    }
+  }
+
+}
